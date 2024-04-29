@@ -1,5 +1,4 @@
-# Title:
-HTML - Wikipedia
+# Title: HTML - Wikipedia
 
 ### Project Address:
 [[https://note-site.netlify.app](https://wiki-duplicate-html.vercel.app/)]([https://note-site.netlify.app](https://wiki-duplicate-html.vercel.app/))
