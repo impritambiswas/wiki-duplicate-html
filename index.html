@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-WIKIPEDIA</title>
+    <link rel="stylesheet" href="/utility.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="d-flex">
+    <!-- ***************************============ NAV BAR START ============*************************** -->
+    <header>
+        <nav class="nav-hide show" id="nav-hide">
+            <nav id="navbar" class="navbar d-flex">
+                <aside class="left-nav d-flex">
+                    <section class="menu">
+                        <a href="javascript:void(0)" class="h-button" onclick="mainMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                    </section>
+                    <section class="logo">
+                        <a href="/" class="logo-link no-underline">
+                            WIKIPEDIA
+                        </a>
+                    </section>
+                </aside>
+                <aside class="right-nav d-flex">
+                    <section class="searchbox">
+                        <a href="javascript:void(0)" id="search-link" class="search-link slide" onclick="searchBar()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </section>
+                    <section class="dots d-flex">
+                        <a href="javascript:void(0)" class="dots-link no-underline bolder" onclick="threeDot()">...</a>
+                    </section>
+                </aside>
+            </nav>
+        </nav>
+
+        <!-- ****************************** HIDDEN MENUS ******************************** -->
+
+        <!-- *********************** MAIN MENU ************************** -->
+        <aside id="main-menu" class="main-menu-div d-none">
+            <div class="main-menu-content">
+                <div class="main-menu">
+                    <h4 class="tag">Main Menu</h4>
+                    <hr>
+                    <a href="#">Main Page</a>
+                    <a href="#">Contents</a>
+                    <a href="#">Current Events</a>
+                    <a href="#">Random Article</a>
+                    <a href="#">About Wikipedia</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Donate</a>
+                </div>
+                <div class="contribute-menu">
+                    <h4 class="tag thin">Contribute</h4>
+                    <hr>
+                    <a href="#">Help</a>
+                    <a href="#">Learn To Edit</a>
+                    <a href="#">Community Portal</a>
+                    <a href="#">Recent Changes</a>
+                    <a href="#">Upload File</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" name="close-btn-left" class="close-btn-link-left" onclick="mainMenu()">
+            </a>
+        </aside>
+
+        <!-- ************************ SEARCH  BOX ************************ -->
+        <section id="search-bar" class="seacrh-close d-none">
+            <section class="search-bar d-flex">
+                <i class="search-icon fa-solid fa-magnifying-glass"></i><input type="search" class="search-bar-box"
+                    placeholder="Search Wikipedia" name="search-here" id="search-bar-box"><input class="search-btn"
+                    type="button" value="Search">
+            </section>
+            <a href="javascript:void(0)" name="search-close-btn" class="search-close-btn-link" onclick="searchBar()">
+                <i class="search-close-btn fa-solid fa-xmark"></i>
+            </a>
+            <a href="javascript:void(0)" name="close-btn-left" class="close-btn-link-left" onclick="searchBar()">
+            </a>
+        </section>
+
+        <!-- ********************** THREE DOT MENU ********************** -->
+        <aside class="three-dot-menu-close d-none" id="three-dot-menu">
+            <div class="three-dot-menu">
+                <section class="create">
+                    <i class="fa-solid fa-user-plus"></i><a href="#" class="create-link">Create Account</a>
+                </section>
+                <section class="login">
+                    <i class="fa-solid fa-right-to-bracket"></i> <a href="#" class="create-link">Log In</a>
+                </section>
+                <p class="3-dot-txt">
+                    Pages for loged out editors<br><a href="#" class="learn">(Learn More)</a>
+                </p>
+                <a href="#" class="contributor-3-dot">Contributors</a><br>
+                <a href="#" class="talk-3-dot">Talk</a>
+            </div>
+            <a href="javascript:void(0)" name="close-btn-left" class="close-btn-link-left" onclick="threeDot()">
+            </a>
+        </aside>
+        <!-- ****************************** HIDDEN MENUS END ****************************** -->
+    </header>
+    <!-- *************************============== NAVBAR END ==============************************* -->
+
+    <!-- *************************=========== MAIN BODY  START ===========************************* -->
+    <main>
+        <!-- ************************ MAIN HEADER *********************** -->
+        <section id="main-header" class="main-header d-flex">
+            <aside class="m-h-left d-flex">
+                <a href="javascript:void(0)" class="content-link" onclick="contentsSubMenuReset(); openContents()">
+                    <i class="fa-solid fa-list contents-menu"></i>
+                </a>
+                <h1 class="title">HTML</h1>
+            </aside>
+            <aside class="m-h-right">
+                <a href="javascript:void(0)" class="languages-link d-flex" onclick="openLanguages()">
+                    <i class="fa-solid fa-language large"></i>&nbsp;
+                    <span class="lang-txt">133 languages</span>
+                    <i id="lang-dd-icon" class="fa-solid fa-chevron-down dd-icons"></i>
+                </a>
+            </aside>
+        </section>
+        <hr>
+        <!-- ******************** MAIN HEADER HIDDEN CONTENTS& LANGUAGES ******************** -->
+
+        <!-- *************************** CONTENTS ***************************** -->
+        <section id="contents-menu" class="contents-box d-none">
+            <div class="contents d-flex">
+                <h5 class="content-header">Contents</h5>
+                <hr class="contents-hr">
+                <a href="#nav-hide" class="content-1">(Top)</p>
+                    <aside class="contents-items !history">
+                        <a href="javascript:void(0)" class="contents-dd-link dd" onclick="historySubMenu()">
+                            <i id="dd-icon-history" class="fa-solid fa-chevron-right history-dd dd-icons"></i>
+                        </a>
+                        <a href="#history" class="history-link">History</a>
+                        <section id="history-sub-menu" class="content-sub-menu d-none">
+                            <a href="#development" class="hsm-item">Development</a>
+                            <a href="#timeline" class="hsm-item">HTML Version Timeline</a>
+                            <section class="sub-sub-menu deep-menu d-flex">
+                                <a href="#html2">HTML 2</a>
+                                <a href="#html3">HTML 3</a>
+                                <a href="#html4">HTML 4</a>
+                                <a href="#html5">HTML 5</a>
+                            </section>
+                            <a href="#draft-timeline" class="hsm-item">HTML Draft Version Timeline</a>
+                            <section class="sub-sub-menu deep-menu">
+                                <a href="#xhtml" class="xhtml">XHTML Versions</a>
+                            </section>
+                            <a href="#transition" class="hsm-item">Transition of HTML Publication to WHATWG</a>
+                            <hr class="sub-menu-hr">
+                        </section>
+                    </aside>
+                    <aside class="contents-items !markup">
+                        <a href="javascript:void(0)" class="contents-dd-link dd" onclick="markupSubMenu()">
+                            <i id="dd-icon-markup" class="fa-solid fa-chevron-right markup-dd dd-icons"></i>
+                        </a>
+                        <a href="#markup" class="markup-link">Markup</a>
+                        <section id="markup-sub-menu" class="content-sub-menu d-none">
+                            <a href="#elements" class="msm-item">Elements</a>
+                            <section class="sub-sub-menu deep-menu d-flex">
+                                <a href="#element-examples">Element Examples</a>
+                                <section class="sub-sub-menu deeper-menu d-flex">
+                                    <a href="#ele-headings">Headings</a>
+                                    <a href="#ele-line-breaks">Line Breaks</a>
+                                    <a href="#inputs">Inputs</a>
+                                </section>
+                                <a href="#attributes">Attributes</a>
+                            </section>
+                            <a href="#character" class="msm-item">Character and Entity References</a>
+                            <a href="#datatypes" class="msm-item">Data Types</a>
+                            <a href="#doc-declaration" class="msm-item">Document Type Declaration</a>
+                            <hr class="sub-menu-hr">
+                        </section>
+                    </aside>
+                    <a href="#semantic" class="markup-link">&nbsp;&nbsp;&nbsp;Semantic HTML</a>
+                    <aside class="contents-items !delivery">
+                        <a href="javascript:void(0)" class="contents-dd-link dd" onclick="deliverySubMenu()">
+                            <i id="dd-icon-delivery" class="fa-solid fa-chevron-right delivery-dd dd-icons"></i>
+                        </a>
+                        <a href="#delivery" class="delivery-link">Delivery</a>
+                        <section id="delivery-sub-menu" class="content-sub-menu d-none">
+                            <a href="#http" class="dsm">HTTP</a>
+                            <a href="#html-email" class="dsm">HTML E-mail</a>
+                            <a href="#http" class="dsm">Naming Conventions</a>
+                            <a href="#http" class="dsm">HTML Application</a>
+                            <hr class="sub-menu-hr">
+                        </section>
+                    </aside>
+                    <aside class="contents-items !html4v">
+                        <a href="javascript:void(0)" class="contents-dd-link dd" onclick="html4VSubMenu()">
+                            <i id="dd-icon-html4v" class="fa-solid fa-chevron-right html4v-dd dd-icons"></i>
+                        </a>
+                        <a href="#html4v" class="html4v-link">HTML4 Variations</a>
+                        <section id="html4v-sub-menu" class="content-sub-menu d-none">
+                            <a href="#sgml/xml" class="h4vsm">SGML-Based Versus XML-based HTML</a>
+                            <a href="#transitional/strict" class="h4vsm">Transitional Versus Strict</a>
+                            <a href="#frameset/transitional" class="h4vsm">Frameset VersusTransitional</a>
+                            <a href="#summary-specv" class="h4vsm">Summary of Specification Versions</a>
+                            <hr class="sub-menu-hr">
+                        </section>
+                    </aside>
+                    <a href="#htmlvshtml5" class="markup-link">&nbsp;&nbsp;&nbsp;WHATWG HTML versus HTML5</a>
+                    <a href="#wys-editors" class="markup-link">&nbsp;&nbsp;&nbsp;WYSIWYG editors</a>
+                    <a href="#see-also" class="markup-link">&nbsp;&nbsp;&nbsp;See also</a>
+                    <a href="#references" class="markup-link">&nbsp;&nbsp;&nbsp;References</a>
+                    <a href="#external" class="markup-link">&nbsp;&nbsp;&nbsp;External Links</a>
+            </div>
+            <a href="javascript:void(0)" name="close-btn-left" class="close-btn-link-left"
+                onclick="contentsSubMenuReset(); openContents()">
+            </a>
+        </section>
+
+        <!-- *************************** LANGUAGES **************************** -->
+        <aside id="languages-menu" class="languages-menu-close d-none">
+            <section class="languages-menu">
+                <div class="search-lang d-flex">
+                    <i class="fa-solid fa-magnifying-glass"></i><input type="search" name="search-language"
+                        id="search-language" placeholder="Search for a language">
+                </div>
+                <div class="main-lang-menu d-flex">
+                    <div class="lang-sub-menu d-flex">
+                        <p class="header-lang-sub-menu thin small">Suggested languages</p>
+                        <menu class="sub-sub-lang d-grid">
+                            <a href="javascript;" class="lang-items">اردو</a>
+                            <a href="javascript;" class="lang-items">سنڌي</a>
+                            <a href="javascript;" class="lang-items">नेपाली</a>
+                            <a href="javascript;" class="lang-items">मराठी</a>
+                            <a href="javascript;" class="lang-items">मैथिली</a>
+                            <a href="javascript;" class="lang-items">हिन्दी</a>
+                            <a href="javascript;" class="lang-items">অসমীয়া</a>
+                            <a href="javascript;" class="lang-items">বাংলা</a>
+                            <a href="javascript;" class="lang-items">ਪੰਜਾਬੀ</a>
+                            <a href="javascript;" class="lang-items">ગુજરાતી</a>
+                            <a href="javascript;" class="lang-items">தமிழ்</a>
+                            <a href="javascript;" class="lang-items">മലയാളം</a>
+                        </menu>
+                    </div>
+                    <div class="lang-sub-menu d-flex">
+                        <p class="header-lang-sub-menu thin small">Worldwide</p>
+                        <menu class="sub-sub-lang d-grid">
+                            <a href="javascript;" class="lang-items">Español</a>
+                            <a href="javascript;" class="lang-items">Esperanto</a>
+                            <a href="javascript;" class="lang-items">Français</a>
+                            <a href="javascript;" class="lang-items">Ido</a>
+                            <a href="javascript;" class="lang-items">Interlingua</a>
+                            <a href="javascript;" class="lang-items">Lingua Franca Nova</a>
+                            <a href="javascript;" class="lang-items">Português</a>
+                            <a href="javascript;" class="lang-items">Simple English</a>
+                        </menu>
+                    </div>
+                </div>
+                <div class="add-lang d-flex">
+                    <aside class="left-add-lang">
+                        <a href="javascript:(addLang);" class="add-lang-link d-flex"><i
+                                class="fa-solid fa-plus small"></i>
+                            <p class="add-lang-txt small">Add languages</p>
+                        </a>
+                    </aside>
+                    <aside class="right-add-lang">
+                        <a href="js:(settings)" class="settings-link"><i class="fa-solid fa-gear"></i></a>
+                    </aside>
+                </div>
+            </section>
+            <a href="javascript:void(0)" name="close-btn-left" class="close-btn-link-left" onclick="openLanguages()">
+            </a>
+        </aside>
+        <!-- ******************** MAIN HEADER HIDDEN CONTENTS& LANGUAGES END ******************** -->
+
+        <!-- """""""""""""""""""""""""=========== ACTION MENU ===========""""""""""""""""""""""""" -->
+        <section class="action-menu d-flex">
+            <aside class="left-action-menu d-flex small">
+                <a href="javascript:;" id="article" class="lam-link no-underline active" onclick="openArticle()">Article</a>
+                <a href="javascript:;" id="talk" class="lam-link no-underline" onclick="openTalk()">Talk</a>
+            </aside>
+            <aside class="right-action-menu d-flex">
+                <a href="javascript:void(0)" class="contents-dd-link dd no-underline" onclick="openTools()">
+                    <span class="tools small">Tools</span>
+                    <i id="dd-icon-tools" class="fa-solid fa-chevron-down history-dd dd-icons"></i>
+                </a>
+            </aside>
+        </section>
+        <hr>
+        <aside id="tools-menu" class="tools-menu-close d-none">
+            <menu class="tools-menu d-flex">
+                <lh class="tools-title bold">Tools</lh>
+                <hr class="sub-menu-hr">
+                <li>
+                    <menu class="tools-sub-menu d-flex">
+                        <lh>Action</lh>
+                        <hr class="sub-menu-hr">
+                        <li><a href="" class="tools-content">Read</a></li>
+                        <li><a href="" class="tools-content">View Source</a></li>
+                        <li><a href="" class="tools-content">View History</a></li>
+                    </menu>
+                </li>
+                <li>
+                    <menu class="tools-sub-menu d-flex">
+                        <lh>General</lh>
+                        <hr class="sub-menu-hr">
+                        <li><a href="" class="tools-content">What Links Here</a></li>
+                        <li><a href="" class="tools-content">Related Changes</a></li>
+                        <li><a href="" class="tools-content">Special Pages</a></li>
+                        <li><a href="" class="tools-content">Permanent Link</a></li>
+                        <li><a href="" class="tools-content">Page Information</a></li>
+                        <li><a href="" class="tools-content">Cite This Page</a></li>
+                        <li><a href="" class="tools-content">Get Shortened URL</a></li>
+                        <li><a href="" class="tools-content">Download QR Code</a></li>
+                        <li><a href="" class="tools-content">Wikidata Item</a></li>
+                        <li><a href="" class="tools-content">Expand All</a></li>
+                        <li><a href="" class="tools-content">Edit Interlanguage Links</a></li>
+                    </menu>
+                </li>
+                <li>
+                    <menu class="tools-sub-menu d-flex">
+                        <lh>Print/Export</lh>
+                        <hr class="sub-menu-hr">
+                        <li><a href="" class="tools-content">Download As PDF</a></li>
+                        <li><a href="" class="tools-content">Printable Version</a></li>
+                    </menu>
+                </li>
+                <li>
+                    <menu class="tools-sub-menu d-flex">
+                        <lh>In Other Projects</lh>
+                        <hr class="sub-menu-hr">
+                        <li><a href="" class="tools-content">Wikimedia Commons</a></li>
+                        <li><a href="" class="tools-content">Wikibooks</a></li>
+                        <li><a href="" class="tools-content">Wikiversity</a></li>
+                    </menu>
+                </li>
+
+            </menu>
+            <a href="javascript:void(0)" name="close-btn-left" class="close-btn-link-left" onclick="openTools()">
+            </a>
+        </aside>
+    </main>
+    <!-- **************************============ MAIN BODY END ============************************** -->
+    <footer></footer>
+    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/b13ddf06c5.js" crossorigin="anonymous"></script>
+    <span></span>
+</body>
+
+</html>
