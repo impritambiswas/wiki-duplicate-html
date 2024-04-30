@@ -348,6 +348,7 @@ main {
 
 .tools-menu {
     flex-direction: column;
+    background-color: #fff;
     gap: 0.4rem;
     position: absolute;
     right: 5dvw;
