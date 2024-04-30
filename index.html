@@ -127,7 +127,7 @@
         <!-- ******************** MAIN HEADER HIDDEN CONTENTS& LANGUAGES ******************** -->
 
         <!-- *************************** CONTENTS ***************************** -->
-        <section id="contents-menu" class="contents-box d-none">
+        <aside id="contents-menu" class="contents-box d-none">
             <div class="contents d-flex">
                 <h5 class="content-header">Contents</h5>
                 <hr class="contents-hr">
@@ -212,7 +212,7 @@
             <a href="javascript:void(0)" name="close-btn-left" class="close-btn-link-left"
                 onclick="contentsSubMenuReset(); openContents()">
             </a>
-        </section>
+        </aside>
 
         <!-- *************************** LANGUAGES **************************** -->
         <aside id="languages-menu" class="languages-menu-close d-none">
@@ -255,7 +255,7 @@
                 </div>
                 <div class="add-lang d-flex">
                     <aside class="left-add-lang">
-                        <a href="javascript:(addLang);" class="add-lang-link d-flex"><i
+                        <a href="javascript:(addLang);" class="add-lang-link d-flex no-underline"><i
                                 class="fa-solid fa-plus small"></i>
                             <p class="add-lang-txt small">Add languages</p>
                         </a>
@@ -273,7 +273,8 @@
         <!-- """""""""""""""""""""""""=========== ACTION MENU ===========""""""""""""""""""""""""" -->
         <section class="action-menu d-flex">
             <aside class="left-action-menu d-flex small">
-                <a href="javascript:;" id="article" class="lam-link no-underline active" onclick="openArticle()">Article</a>
+                <a href="javascript:;" id="article" class="lam-link no-underline active"
+                    onclick="openArticle()">Article</a>
                 <a href="javascript:;" id="talk" class="lam-link no-underline" onclick="openTalk()">Talk</a>
             </aside>
             <aside class="right-action-menu d-flex">
@@ -336,12 +337,30 @@
             <a href="javascript:void(0)" name="close-btn-left" class="close-btn-link-left" onclick="openTools()">
             </a>
         </aside>
-        <p class="txt-under-main-header">From Wikipedia, the free encyclopedia</p>
+        <section class="under-main-header">
+            <section class="under-main-menu-partition d-flex">
+                <p class="txt-under-main-header small">From Wikipedia, the free encyclopedia</p>
+                <i class="fa-solid fa-id-badge icon-under-main-header"></i>
+            </section>
+            <p class="more-txt-under-main-header">".htm" and ".html" redirect here. For other uses, see <a
+                    href="javascript:void(0);" class="mtumh-link">HTM</a>.</p>
+        </section>
         <!-- ***************============ MAIN TEXT AREA ============*************** -->
-        <div class="main-text-area">
-            <div class="text"></div>
-            <aside class="image-description"></aside>
+        <div class="main-txt-area">
+            <aside class="image-and-description d-flex">
+                <h4 class="img-desc-title center">HTML</h4>
+                <h5 class="img-desc-subtitle center">(HyperText Markup Language)</h5>
+                <div class="main-img-desc">
+                    <figure>
+                        <img class="main-desc-img" src="" alt="HTML LOGO">
+                        <figcaption class="smaller">The official logo of the latest version, <a
+                                href="https://en.wikipedia.org/wiki/HTML5" class="link-to-html5">HTML5</a></figcaption>
+                    </figure>
+
+                </div>
+            </aside>
             <aside class="more-details"></aside>
+            <div class="txt"></div>
         </div>
     </main>
     <!-- **************************============ MAIN BODY END ============************************** -->

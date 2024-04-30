@@ -40,6 +40,10 @@ a.no-underline:hover {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 .rotate-90deg {
     rotate: 90deg;
 }
@@ -100,6 +104,14 @@ a.no-underline:hover {
     font-size: 0.8rem;
 }
 
+.smaller {
+    font-size: 0.6rem;
+}
+
+.smallest {
+    font-size: 0.4rem;
+}
+
 .navbar,
 .navbar>* {
     overflow-x: hidden;
@@ -108,4 +120,8 @@ a.no-underline:hover {
 hr {
     border: 0.8px solid rgba(128, 128, 128, 0.35) 0 0 0;
     height: 0px;
+}
+
+.center {
+    text-align: center;
 }

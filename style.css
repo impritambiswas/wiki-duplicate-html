@@ -365,3 +365,48 @@ main {
     gap: 0.4rem;
 }
 
+.under-main-header {
+    align-items: baseline;
+}
+
+.under-main-menu-partition {
+    justify-content: space-between;
+}
+
+.txt-under-main-header {
+    padding-block: 0.4rem;
+}
+
+.icon-under-main-header {
+    font-size: 1.2rem;
+    color: gray;
+    padding: 0.2rem;
+    text-align: end;
+}
+
+.more-txt-under-main-header {
+    font-size: 0.8rem;
+    padding-block: 0.4rem;
+    text-indent: 0.8rem;
+}
+
+.image-and-description {
+    margin-left: calc(100% - 15rem);
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    /* background-color: aqua; */
+}
+
+.main-img-desc {
+    background-color: aliceblue;
+    border: 1px solid rgba(78, 78, 78, 0.2);
+    margin-block: 0.2rem;
+    padding: 0.4rem 0.6rem;
+}
+
+.main-desc-img {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png);
+    height: 8rem;
+    margin-inline: auto;
+}
