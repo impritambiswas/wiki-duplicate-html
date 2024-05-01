@@ -125,3 +125,11 @@ hr {
 .center {
     text-align: center;
 }
+
+.outlined {
+    outline: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.monospaced {
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -411,3 +411,16 @@ main {
     height: 6.8rem;
     margin-inline: auto;
 }
+
+.desc-menu {
+    font-size: 0.7rem;
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 0.4rem;
+    row-gap: 0.2rem;
+}
+
+.extension-right>* {
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    margin-block: 0.2rem;
+}
