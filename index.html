@@ -7,7 +7,6 @@
     <title>HTML-WIKIPEDIA</title>
     <link rel="stylesheet" href="/utility.css">
     <link rel="stylesheet" href="/style.css">
-    <script src="/onload.js"></script>
 </head>
 
 <body class="d-flex">
@@ -23,7 +22,8 @@
                     </section>
                     <section class="logo">
                         <a href="/" class="logo-link d-flex no-underline">
-                            <img class="logo-img" src="https://en.wikipedia.org/static/images/icons/wikipedia.png" alt="">
+                            <img class="logo-img" src="https://en.wikipedia.org/static/images/icons/wikipedia.png"
+                                alt="">
                             <span class="logo-txt">WIKIPEDIA</span>
                         </a>
                     </section>
@@ -88,11 +88,15 @@
         <!-- ********************** THREE DOT MENU ********************** -->
         <aside class="three-dot-menu-close d-none" id="three-dot-menu">
             <div class="three-dot-menu">
-                <section class="create">
-                    <i class="fa-solid fa-user-plus"></i><a href="#" class="create-account" id="create-account" onload="linkNewAccount()">Create Account</a>
-                </section>
-                <section class="login">
-                    <i class="fa-solid fa-right-to-bracket"></i> <a href="#" class="create-link">Log In</a>
+                <section class="three-dot-navx">
+                    <section class="create">
+                        <i class="fa-solid fa-user-plus"></i><a
+                            href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=HTML"
+                            class="create-account" id="create-account">Create Account</a>
+                    </section>
+                    <section class="login">
+                        <i class="fa-solid fa-right-to-bracket"></i> <a href="#" class="create-link">Log In</a>
+                    </section>
                 </section>
                 <p class="3-dot-txt">
                     Pages for loged out editors<br><a href="#" class="learn">(Learn More)</a>
