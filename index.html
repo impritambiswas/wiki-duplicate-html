@@ -7,6 +7,7 @@
     <title>HTML-WIKIPEDIA</title>
     <link rel="stylesheet" href="/utility.css">
     <link rel="stylesheet" href="/style.css">
+    <script src="/onload.js"></script>
 </head>
 
 <body class="d-flex">
@@ -21,8 +22,9 @@
                         </a>
                     </section>
                     <section class="logo">
-                        <a href="/" class="logo-link no-underline">
-                            WIKIPEDIA
+                        <a href="/" class="logo-link d-flex no-underline">
+                            <img class="logo-img" src="https://en.wikipedia.org/static/images/icons/wikipedia.png" alt="">
+                            <span class="logo-txt">WIKIPEDIA</span>
                         </a>
                     </section>
                 </aside>
@@ -87,7 +89,7 @@
         <aside class="three-dot-menu-close d-none" id="three-dot-menu">
             <div class="three-dot-menu">
                 <section class="create">
-                    <i class="fa-solid fa-user-plus"></i><a href="#" class="create-link">Create Account</a>
+                    <i class="fa-solid fa-user-plus"></i><a href="#" class="create-account" id="create-account" onload="linkNewAccount()">Create Account</a>
                 </section>
                 <section class="login">
                     <i class="fa-solid fa-right-to-bracket"></i> <a href="#" class="create-link">Log In</a>
@@ -342,8 +344,10 @@
                 <p class="txt-under-main-header small">From Wikipedia, the free encyclopedia</p>
                 <i class="fa-solid fa-id-badge icon-under-main-header"></i>
             </section>
-            <p class="more-txt-under-main-header">".htm" and ".html" redirect here. For other uses, see <a
-                    href="javascript:void(0);" class="mtumh-link">HTM</a>.</p>
+            <em>
+                <p class="more-txt-under-main-header">".htm" and ".html" redirect here. For other uses, see <a
+                        href="javascript:void(0);" class="mtumh-link">HTM</a>.</p>
+            </em>
         </section>
         <!-- ***************============ MAIN TEXT AREA ============*************** -->
         <div class="main-txt-area">
@@ -395,13 +399,14 @@
 
                         <aside class="left-desc-menu">
                             <a href="https://en.wikipedia.org/wiki/Software_release_life_cycle"
-                                    class="release-cycle-wiki">Latest Release</a>
+                                class="release-cycle-wiki">Latest Release</a>
                         </aside>
                         <aside class="right-desc-menu"><a href="https://html.spec.whatwg.org/multipage/"
-                            class="html-latest-release-link">Living Standards</a></aside>
+                                class="html-latest-release-link">Living Standards</a></aside>
 
-                        <aside class="left-desc-menu"></aside>
-                        <aside class="right-desc-menu"></aside>
+                        <aside class="left-desc-menu"><span class="bold">Type Of Format</span></aside>
+                        <aside class="right-desc-menu"><a href="https://en.wikipedia.org/wiki/Document_file_format"
+                                class="document-file-format-link">Document File Format</a></aside>
 
                         <aside class="left-desc-menu"></aside>
                         <aside class="right-desc-menu"></aside>
